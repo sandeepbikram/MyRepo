@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE Universe - Hall of Fame & Current Superstars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <span class="loader-text">WWE UNIVERSE</span>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                WWE Universe
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#hall-of-fame">Hall of Fame</a></li>
+                <li><a href="#current">Current Stars</a></li>
+                <li><a href="#championships">Championships</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-animate="fadeInUp">
+                <span class="title-line">WWE Hall of Fame</span>
+                <span class="title-line accent">&</span>
+                <span class="title-line">Current Superstars</span>
+            </h1>
+            <p class="hero-subtitle" data-animate="fadeInUp" data-delay="200">
+                Celebrating the legends who built the empire and the superstars who carry the torch forward.
+            </p>
+            <div class="hero-buttons" data-animate="fadeInUp" data-delay="400">
+                <a href="#hall-of-fame" class="btn btn-primary">
+                    <i class="fas fa-trophy"></i> Hall of Fame
+                </a>
+                <a href="#current" class="btn btn-secondary">
+                    <i class="fas fa-star"></i> Current Stars
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-animate="fadeInUp">
+                    <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="stat-number" data-count="238">0</div>
+                    <div class="stat-label">Hall of Famers</div>
+                </div>
+                <div class="stat-item" data-animate="fadeInUp" data-delay="100">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-number" data-count="180">0</div>
+                    <div class="stat-label">Current Superstars</div>
+                </div>
+                <div class="stat-item" data-animate="fadeInUp" data-delay="200">
+                    <div class="stat-icon"><i class="fas fa-calendar"></i></div>
+                    <div class="stat-number" data-count="40">0</div>
+                    <div class="stat-label">WrestleMania Events</div>
+                </div>
+                <div class="stat-item" data-animate="fadeInUp" data-delay="300">
+                    <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                    <div class="stat-number" data-count="180">0</div>
+                    <div class="stat-label">Countries Reached</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hall of Fame Section -->
+    <section class="section" id="hall-of-fame">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <span class="section-tag">Legends</span>
+                <h2 class="section-title gold">Hall of Fame</h2>
+                <p class="section-subtitle">The immortals who shaped sports entertainment forever</p>
+            </div>
+
+            <div class="card-grid">
+
+                <!-- The Undertaker -->
+                <div class="card hof-card" data-animate="fadeInUp">
+                    <div class="card-image-wrapper">
+                        <img src="images/undertaker.jpg" alt="The Undertaker" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/1a1a2e/ffd700?text=The+Undertaker'">
+                        <div class="card-overlay">
+                            <span class="card-year">Inducted: 2022</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Undertaker</h3>
+                        <p class="nickname">"The Deadman" / "The Phenom"</p>
+                        <p class="bio">Mark William Calaway dominated WWE for over 30 years. His legendary WrestleMania streak of 21-0 remains one of the greatest achievements in wrestling history.</p>
+                        <div class="card-stats">
+                            <span class="badge"><i class="fas fa-medal"></i> 7x World Champion</span>
+                            <span class="badge"><i class="fas fa-fire"></i> WM Streak: 21-0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stone Cold -->
+                <div class="card hof-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="card-image-wrapper">
+                        <img src="images/stone-cold.jpg" alt="Stone Cold Steve Austin" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/1a1a2e/ffd700?text=Stone+Cold'">
+                        <div class="card-overlay">
+                            <span class="card-year">Inducted: 2009</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Stone Cold Steve Austin</h3>
+                        <p class="nickname">"The Texas Rattlesnake"</p>
+                        <p class="bio">The face of the Attitude Era. Austin 3:16 changed the wrestling industry forever. His rivalry with Vince McMahon is the greatest storyline in WWE history.</p>
+                        <div class="card-stats">
+                            <span class="badge"><i class="fas fa-medal"></i> 6x World Champion</span>
+                            <span class="badge"><i class="fas fa-crown"></i> 3x Royal Rumble</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Rock -->
+                <div class="card hof-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="card-image-wrapper">
+                        <img src="images/the-rock.jpg" alt="The Rock" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/1a1a2e/ffd700?text=The+Rock'">
+                        <div class="card-overlay">
+                            <span class="card-year">Inducted: 2008</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Rock</h3>
+                        <p class="nickname">"The People's Champion" / "The Great One"</p>
+                        <p class="bio">Dwayne Johnson electrified millions with his charisma and in-ring ability. Transitioned from WWE's biggest star to Hollywood's highest-paid actor.</p>
+                        <div class="card-stats">
+                            <span class="badge"><i class="fas fa-medal"></i> 10x World Champion</span>
+                            <span class="badge"><i class="fas fa-crown"></i> 2x Royal Rumble</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shawn Michaels -->
+                <div class="card hof-card" data-animate="fadeInUp">
+                    <div class="card-image-wrapper">
+                        <img src="images/shawn-michaels.jpg" alt="Shawn Michaels" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/1a1a2e/ffd700?text=Shawn+Michaels'">
+                        <div class="card-overlay">
+                            <span class="card-year">Inducted: 2011</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Shawn Michaels</h3>
+                        <p class="nickname">"The Heartbreak Kid" / "Mr. WrestleMania"</p>
+                        <p class="bio">Widely regarded as the greatest in-ring performer ever. HBK's matches at WrestleMania are considered masterpieces of storytelling and athleticism.</p>
+                        <div class="card-stats">
+                            <span class="badge"><i class="fas fa-medal"></i> 4x World Champion</span>
+                            <span class="badge"><i class="fas fa-crown"></i> 2x Royal Rumble</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Triple H -->
+                <div class="card hof-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="card-image-wrapper">
+                        <img src="images/triple-h.jpg" alt="Triple H" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/1a1a2e/ffd700?text=Triple+H'">
+                        <div class="card-overlay">
+                            <span class="card-year">Inducted: 2019</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Triple H</h3>
+                        <p class="nickname">"The Game" / "The King of Kings"</p>
+                        <p class="bio">Paul Levesque dominated as a wrestler and now leads WWE as Chief Content Officer. DX, Evolution, and The Authority defined multiple eras of WWE.</p>
+                        <div class="card-stats">
+                            <span class="badge"><i class="fas fa-medal"></i> 14x World Champion</span>
+                            <span class="badge"><i class="fas fa-briefcase"></i> WWE CCO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ric Flair -->
+                <div class="card hof-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="card-image-wrapper">
+                        <img src="images/ric-flair.jpg" alt="Ric Flair" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/1a1a2e/ffd700?text=Ric+Flair'">
+                        <div class="card-overlay">
+                            <span class="card-year">Inducted: 2008 & 2012</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ric Flair</h3>
+                        <p class="nickname">"The Nature Boy" — Wooooo!</p>
+                        <p class="bio">The stylin', profilin', limousine ridin', jet flyin' son of a gun. 16-time World Champion and the standard by which all others are measured.</p>
+                        <div class="card-stats">
+                            <span class="badge"><i class="fas fa-medal"></i> 16x World Champion</span>
+                            <span class="badge"><i class="fas fa-star"></i> 2x HOF Inductee</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hulk Hogan -->
+                <div class="card hof-card" data-animate="fadeInUp">
+                    <div class="card-image-wrapper">
+                        <img src="images/hulk-hogan.jpg" alt="Hulk Hogan" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/1a1a2e/ffd700?text=Hulk+Hogan'">
+                        <div class="card-overlay">
+                            <span class="card-year">Inducted: 2005</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hulk Hogan</h3>
+                        <p class="nickname">"The Immortal" / "Hulkamania"</p>
+                        <p class="bio">The man who made wrestling mainstream. Hulkamania ran wild through the 1980s and 90s, making WWE a global phenomenon. Body slammed Andre at WM III.</p>
+                        <div class="card-stats">
+                            <span class="badge"><i class="fas fa-medal"></i> 6x World Champion</span>
+                            <span class="badge"><i class="fas fa-fire"></i> Hulkamania Era</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bret Hart -->
+                <div class="card hof-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="card-image-wrapper">
+                        <img src="images/bret-hart.jpg" alt="Bret Hart" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/1a1a2e/ffd700?text=Bret+Hart'">
+                        <div class="card-overlay">
+                            <span class="card-year">Inducted: 2006 & 2019</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bret "The Hitman" Hart</h3>
+                        <p class="nickname">"The Best There Is, Was, and Ever Will Be"</p>
+                        <p class="bio">Technical excellence personified. The Excellence of Execution brought mat-based wrestling to the forefront and inspired generations of wrestlers worldwide.</p>
+                        <div class="card-stats">
+                            <span class="badge"><i class="fas fa-medal"></i> 7x World Champion</span>
+                            <span class="badge"><i class="fas fa-users"></i> Hart Foundation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edge -->
+                <div class="card hof-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="card-image-wrapper">
+                        <img src="images/edge.jpg" alt="Edge" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/1a1a2e/ffd700?text=Edge'">
+                        <div class="card-overlay">
+                            <span class="card-year">Inducted: 2012</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Edge</h3>
+                        <p class="nickname">"The Rated-R Superstar" / "The Ultimate Opportunist"</p>
+                        <p class="bio">Adam Copeland overcame career-ending injuries to return and prove he's one of the greatest. First Money in the Bank winner and multi-time champion.</p>
+                        <div class="card-stats">
+                            <span class="badge"><i class="fas fa-medal"></i> 11x World Champion</span>
+                            <span class="badge"><i class="fas fa-crown"></i> 2x Royal Rumble</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Championships Banner -->
+    <section class="parallax-section" id="championships">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content" data-animate="fadeInUp">
+            <h2><i class="fas fa-trophy"></i> Legacy Lives Forever</h2>
+            <p>The WWE Hall of Fame honors the greatest performers, managers, commentators, and personalities who have made lasting contributions to sports entertainment. These legends paved the way for today's superstars and their legacy continues to inspire millions worldwide.</p>
+            <div class="title-count">
+                <div class="title-item">
+                    <span class="title-number">50+</span>
+                    <span class="title-label">World Title Reigns Combined</span>
+                </div>
+                <div class="title-item">
+                    <span class="title-number">100+</span>
+                    <span class="title-label">WrestleMania Matches</span>
+                </div>
+                <div class="title-item">
+                    <span class="title-number">30+</span>
+                    <span class="title-label">Years of Dominance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Superstars Section -->
+    <section class="section" id="current">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <span class="section-tag blue">Active Roster</span>
+                <h2 class="section-title blue">Current Superstars</h2>
+                <p class="section-subtitle">The present and future of World Wrestling Entertainment</p>
+            </div>
+
+            <div class="card-grid">
+
+                <!-- Roman Reigns -->
+                <div class="card current-card" data-animate="fadeInUp">
+                    <div class="card-image-wrapper">
+                        <img src="images/roman-reigns.jpg" alt="Roman Reigns" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/16213e/00bfff?text=Roman+Reigns'">
+                        <div class="card-overlay blue">
+                            <span class="card-year">SmackDown</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Roman Reigns</h3>
+                        <p class="nickname">"The Tribal Chief" / "The Head of the Table"</p>
+                        <p class="bio">The longest reigning Universal Champion in history (1,316 days). Roman Reigns redefined what it means to be a top star with his Bloodline faction.</p>
+                        <div class="card-stats">
+                            <span class="badge blue"><i class="fas fa-medal"></i> 6x World Champion</span>
+                            <span class="badge blue"><i class="fas fa-users"></i> The Bloodline</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cody Rhodes -->
+                <div class="card current-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="card-image-wrapper">
+                        <img src="images/cody-rhodes.jpg" alt="Cody Rhodes" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/16213e/00bfff?text=Cody+Rhodes'">
+                        <div class="card-overlay blue">
+                            <span class="card-year">SmackDown</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cody Rhodes</h3>
+                        <p class="nickname">"The American Nightmare"</p>
+                        <p class="bio">Finished the story at WrestleMania 40 by defeating Roman Reigns. Son of Dusty Rhodes, Cody left WWE, built AEW, returned, and captured the Undisputed Championship.</p>
+                        <div class="card-stats">
+                            <span class="badge blue"><i class="fas fa-medal"></i> Undisputed Champion</span>
+                            <span class="badge blue"><i class="fas fa-crown"></i> 2x Rumble Winner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seth Rollins -->
+                <div class="card current-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="card-image-wrapper">
+                        <img src="images/seth-rollins.jpg" alt="Seth Rollins" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/16213e/00bfff?text=Seth+Rollins'">
+                        <div class="card-overlay blue">
+                            <span class="card-year">Raw</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Seth Rollins</h3>
+                        <p class="nickname">"The Visionary" / "The Architect"</p>
+                        <p class="bio">One of the most complete performers in WWE today. From The Shield to singles dominance, Rollins delivers show-stealing matches at every event.</p>
+                        <div class="card-stats">
+                            <span class="badge blue"><i class="fas fa-medal"></i> 7x World Champion</span>
+                            <span class="badge blue"><i class="fas fa-briefcase"></i> Mr. MITB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GUNTHER -->
+                <div class="card current-card" data-animate="fadeInUp">
+                    <div class="card-image-wrapper">
+                        <img src="images/gunther.jpg" alt="GUNTHER" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/16213e/00bfff?text=GUNTHER'">
+                        <div class="card-overlay blue">
+                            <span class="card-year">Raw</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>GUNTHER</h3>
+                        <p class="nickname">"The Ring General"</p>
+                        <p class="bio">The longest reigning Intercontinental Champion in history. GUNTHER brings a hard-hitting, European style that has made him one of the most feared competitors.</p>
+                        <div class="card-stats">
+                            <span class="badge blue"><i class="fas fa-medal"></i> World Heavyweight Champ</span>
+                            <span class="badge blue"><i class="fas fa-crown"></i> King of the Ring</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rhea Ripley -->
+                <div class="card current-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="card-image-wrapper">
+                        <img src="images/rhea-ripley.jpg" alt="Rhea Ripley" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/16213e/00bfff?text=Rhea+Ripley'">
+                        <div class="card-overlay blue">
+                            <span class="card-year">Raw</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Rhea Ripley</h3>
+                        <p class="nickname">"Mami" / "The Eradicator"</p>
+                        <p class="bio">The most dominant woman in WWE today. Rhea's combination of power, charisma, and intimidation has made her the face of the women's division.</p>
+                        <div class="card-stats">
+                            <span class="badge blue"><i class="fas fa-medal"></i> Women's World Champ</span>
+                            <span class="badge blue"><i class="fas fa-users"></i> Judgment Day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bianca Belair -->
+                <div class="card current-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="card-image-wrapper">
+                        <img src="images/bianca-belair.jpg" alt="Bianca Belair" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/16213e/00bfff?text=Bianca+Belair'">
+                        <div class="card-overlay blue">
+                            <span class="card-year">SmackDown</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bianca Belair</h3>
+                        <p class="nickname">"The EST of WWE"</p>
+                        <p class="bio">The Strongest, Fastest, Toughest, Roughest, and the EST of everything. Bianca's athleticism is unmatched and she's headlined multiple WrestleManias.</p>
+                        <div class="card-stats">
+                            <span class="badge blue"><i class="fas fa-medal"></i> 3x Champion</span>
+                            <span class="badge blue"><i class="fas fa-crown"></i> Royal Rumble 2021</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drew McIntyre -->
+                <div class="card current-card" data-animate="fadeInUp">
+                    <div class="card-image-wrapper">
+                        <img src="images/drew-mcintyre.jpg" alt="Drew McIntyre" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/16213e/00bfff?text=Drew+McIntyre'">
+                        <div class="card-overlay blue">
+                            <span class="card-year">Raw</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Drew McIntyre</h3>
+                        <p class="nickname">"The Scottish Warrior"</p>
+                        <p class="bio">From being released to winning the WWE Championship at WrestleMania 36. Drew's comeback story is one of the greatest redemption arcs in wrestling.</p>
+                        <div class="card-stats">
+                            <span class="badge blue"><i class="fas fa-medal"></i> 2x WWE Champion</span>
+                            <span class="badge blue"><i class="fas fa-crown"></i> Royal Rumble 2020</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LA Knight -->
+                <div class="card current-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="card-image-wrapper">
+                        <img src="images/la-knight.jpg" alt="LA Knight" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/16213e/00bfff?text=LA+Knight'">
+                        <div class="card-overlay blue">
+                            <span class="card-year">SmackDown</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>LA Knight</h3>
+                        <p class="nickname">"The Megastar" / "YEAH!"</p>
+                        <p class="bio">The most over superstar in WWE with crowd reactions rivaling Attitude Era levels. LA Knight's mic skills and charisma have made him a fan-favorite phenomenon.</p>
+                        <div class="card-stats">
+                            <span class="badge blue"><i class="fas fa-medal"></i> US Champion</span>
+                            <span class="badge blue"><i class="fas fa-fire"></i> Most Popular 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jey Uso -->
+                <div class="card current-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="card-image-wrapper">
+                        <img src="images/jey-uso.jpg" alt="Jey Uso" class="card-img" onerror="this.src='https://via.placeholder.com/400x450/16213e/00bfff?text=Jey+Uso'">
+                        <div class="card-overlay blue">
+                            <span class="card-year">Raw</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jey Uso</h3>
+                        <p class="nickname">"Main Event Jey" / "YEET!"</p>
+                        <p class="bio">From tag team legend to singles breakout star. Jey Uso's journey from The Bloodline to becoming one of the most beloved superstars has been phenomenal.</p>
+                        <div class="card-stats">
+                            <span class="badge blue"><i class="fas fa-medal"></i> IC Champion</span>
+                            <span class="badge blue"><i class="fas fa-users"></i> The Bloodline</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content" data-animate="fadeInUp">
+                <h2>About WWE Universe</h2>
+                <p>This website is a tribute to the world of WWE, celebrating both the legendary Hall of Famers who built the foundation of sports entertainment and the current superstars who carry the legacy forward. From the squared circle to the grandest stage of them all, WWE continues to entertain millions worldwide.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-history"></i>
+                        <h4>Rich History</h4>
+                        <p>Over 50 years of sports entertainment excellence</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-globe-americas"></i>
+                        <h4>Global Reach</h4>
+                        <p>Broadcasting to over 180 countries worldwide</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <h4>Fan Community</h4>
+                        <p>Millions of passionate fans across the globe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-bolt"></i> WWE Universe</h4>
+                    <p>A fan tribute celebrating the greatest superstars in sports entertainment history.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#hall-of-fame">Hall of Fame</a></li>
+                        <li><a href="#current">Current Stars</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Official Links</h4>
+                    <ul>
+                        <li><a href="https://www.wwe.com" target="_blank">WWE.com</a></li>
+                        <li><a href="https://www.wwe.com/superstars" target="_blank">Superstars</a></li>
+                        <li><a href="https://www.wwe.com/hall-of-fame" target="_blank">Hall of Fame</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/sandeepbikram" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WWE Universe Fan Site | Created by Sandeep Bikram | All trademarks belong to WWE, Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
